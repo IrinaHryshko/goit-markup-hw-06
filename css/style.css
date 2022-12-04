@@ -275,7 +275,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form {
-  margin: 40px;
+  padding: 40px;
 }
 .modal-form p {
   font-weight: 700;
@@ -301,7 +301,7 @@ ul {
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin: 4px 0 0 0;
+  margin: 0;
   padding: 0;
   min-width: 448px;
   min-height: 40px;
@@ -312,6 +312,7 @@ ul {
 }
 .position-img {
   position: relative;
+  margin-top: 4px;
   color: var(--brand-color);
 }
 .modal-icon {
@@ -370,9 +371,7 @@ textarea.comment-input::placeholder {
   font-size: 14px;
   line-height: 1.7;
 }
-.contract {
-  color: var(--sub-accent);
-}
+
 .modal-checkbox {
   position: absolute;
   width: 1px;
@@ -412,7 +411,27 @@ textarea.comment-input::placeholder {
   padding-top: 3px;
   border-radius: 2px;
 }
+.contract-link {
+  position: relative;
+  display: inline-block;
+}
+.contract {
+  text-decoration: none;
+  color: var(--sub-accent);
+}
+.contract::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
 
+  margin: 0;
+  padding: 0;
+  height: 1px;
+  background-color: var(--sub-accent);
+  width: 100%;
+}
 .modal-close-btn {
   position: absolute;
 
@@ -788,7 +807,7 @@ textarea.comment-input::placeholder {
   align-items: flex-end;
   padding: 0;
 
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .mailing-list-area {
