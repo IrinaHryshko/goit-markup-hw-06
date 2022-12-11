@@ -586,9 +586,6 @@ textarea.modal__comment::placeholder {
   text-align: center;
   line-height: 1.16;
 }
-.our-team {
-  background-color: var(--bgc-section);
-}
 
 .our-team__item {
   margin-right: 30px;
@@ -666,15 +663,6 @@ textarea.modal__comment::placeholder {
 
 /*постійні клієнти*/
 
-.customers__title {
-  margin-bottom: 50px;
-  margin-top: 0;
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-}
-
 .customers {
   display: flex;
   justify-content: center;
@@ -729,14 +717,15 @@ textarea.modal__comment::placeholder {
 .footer-page__logo {
   display: inline-block;
   margin-bottom: 20px;
-  text-decoration: none;
-
-  color: var(--accent-color);
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
+  color: var(--logo);
+  text-decoration: none;
+  color: var(--accent-color);
 }
+
 .footer-page__link {
   display: inline-block;
   text-decoration: none;
@@ -751,9 +740,6 @@ textarea.modal__comment::placeholder {
 .footer-page__link:hover,
 .footer-page__link:focus {
   color: var(--sub-accent);
-}
-.map-link {
-  margin: 0;
 }
 
 .footer-page__mail {
@@ -771,7 +757,7 @@ textarea.modal__comment::placeholder {
   display: flex;
   margin: 0;
 }
-.icon-footer__list {
+.icon-footer__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -789,8 +775,8 @@ textarea.modal__comment::placeholder {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-footer__list:hover,
-.icon-footer__list:focus {
+.icon-footer__link:hover,
+.icon-footer__link:focus {
   background-color: var(--sub-accent);
 }
 .icon-footer__actually {
